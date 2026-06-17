@@ -7,8 +7,7 @@ searchInput.addEventListener('keyup', () => {
 
   destinationItems.forEach(item => {
     const text = item.innerText.toLowerCase();
-
-    if(text.includes(value)) {
+    if (text.includes(value)) {
       item.style.display = 'block';
     } else {
       item.style.display = 'none';
@@ -20,12 +19,12 @@ searchInput.addEventListener('keyup', () => {
 const bookingForm = document.getElementById('bookingForm');
 const successMessage = document.getElementById('successMessage');
 
-bookingForm.addEventListener('submit', function(e) {
+bookingForm.addEventListener('submit', function (e) {
   e.preventDefault();
 
   successMessage.classList.remove('hidden');
 
-  bookingForm.reset();
+  // bookingForm.reset();
 
   setTimeout(() => {
     successMessage.classList.add('hidden');
@@ -36,12 +35,12 @@ bookingForm.addEventListener('submit', function(e) {
 const contactForm = document.getElementById('contactForm');
 const contactMessage = document.getElementById('contactMessage');
 
-contactForm.addEventListener('submit', function(e) {
+contactForm.addEventListener('submit', function (e) {
   e.preventDefault();
 
   contactMessage.classList.remove('hidden');
 
-  contactForm.reset();
+  // contactForm.reset();
 
   setTimeout(() => {
     contactMessage.classList.add('hidden');
