@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Explorer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Travel Explorer</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div>
+      <h1>Explore The World</h1>
+      <p>Discover beautiful destinations and unforgettable experiences.</p>
+      <a href="#destinations" class="btn btn-primary btn-lg mt-3">Start Exploring</a>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="container py-5" id="destinations">
+    <h2 class="section-title">Popular Destinations</h2>
+
+    <div class="search-box mb-5">
+      <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Search destinations...">
+    </div>
+
+    <div class="row g-4" id="destinationContainer">
+
+      <div class="col-md-4 destination-item">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Paris">
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-text">Experience romance, culture, and the Eiffel Tower.</p>
+            <button class="btn btn-outline-primary w-100">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 destination-item">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Tokyo">
+          <div class="card-body">
+            <h5 class="card-title">Tokyo</h5>
+            <p class="card-text">Enjoy futuristic technology and traditional beauty.</p>
+            <button class="btn btn-outline-primary w-100">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 destination-item">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Nepal">
+          <div class="card-body">
+            <h5 class="card-title">Nepal</h5>
+            <p class="card-text">Adventure through the Himalayas and beautiful valleys.</p>
+            <button class="btn btn-outline-primary w-100">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 destination-item">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Dubai">
+          <div class="card-body">
+            <h5 class="card-title">Dubai</h5>
+            <p class="card-text">Luxury shopping, desert adventures, and skyscrapers.</p>
+            <button class="btn btn-outline-primary w-100">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 destination-item">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Bali">
+          <div class="card-body">
+            <h5 class="card-title">Bali</h5>
+            <p class="card-text">Relax on beaches and enjoy tropical paradise views.</p>
+            <button class="btn btn-outline-primary w-100">View Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 destination-item">
+        <div class="card destination-card">
+          <img src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?q=80&w=1200&auto=format&fit=crop" class="card-img-top" alt="Switzerland">
+          <div class="card-body">
+            <h5 class="card-title">Switzerland</h5>
+            <p class="card-text">Snowy mountains, lakes, and scenic train rides.</p>
+            <button class="btn btn-outline-primary w-100">View Details</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section class="py-5 bg-light" id="packages">
+    <div class="container">
+      <h2 class="section-title">Travel Packages</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="package-box text-center">
+            <h3>Basic</h3>
+            <p class="package-price">$1999</p>
+            <p>3 Days Tour</p>
+            <p>Hotel Included</p>
+            <p>Breakfast Included</p>
+            <button class="btn btn-primary w-100 book-btn">Book Now</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="package-box text-center">
+            <h3>Standard</h3>
+            <p class="package-price">$2399</p>
+            <p>7 Days Tour</p>
+            <p>4-Star Hotel</p>
+            <p>All Meals Included</p>
+            <button class="btn btn-primary w-100 book-btn">Book Now</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="package-box text-center">
+            <h3>Premium</h3>
+            <p class="package-price">$4999</p>
+            <p>14 Days Tour</p>
+            <p>Luxury Hotel</p>
+            <p>Flights Included</p>
+            <button class="btn btn-primary w-100 book-btn">Book Now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="container py-5" id="booking">
+    <h2 class="section-title">Book Your Trip</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="booking-form">
+
+          <form id="bookingForm">
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Destination</label>
+                <select class="form-select" id="destination" required>
+                  <option value="">Choose Destination</option>
+                  <option>Paris</option>
+                  <option>Tokyo</option>
+                  <option>Nepal</option>
+                  <option>Dubai</option>
+                  <option>Bali</option>
+                  <option>Switzerland</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Travel Date</label>
+                <input type="date" class="form-control" id="date" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Travelers</label>
+                <input type="number" class="form-control" id="travelers" min="1" value="1" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Package</label>
+                <select class="form-select" id="package" required>
+                  <option value="">Choose Package</option>
+                  <option>Basic</option>
+                  <option>Standard</option>
+                  <option>Premium</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Special Request</label>
+                <textarea class="form-control" rows="4"></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg w-100">Confirm Booking</button>
+              </div>
+
+            </div>
+          </form>
+
+          <div class="alert alert-success mt-4 hidden" id="successMessage">
+            Your booking has been submitted successfully!
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">What Travelers Say</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>“Amazing experience! The booking process was smooth and the trip was unforgettable.”</p>
+            <h6>- Sarah</h6>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>“Beautiful destinations and excellent service. Highly recommended!”</p>
+            <h6>- Michael</h6>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>“The best travel website I have used. Very professional and easy to navigate.”</p>
+            <h6>- David</h6>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container py-5" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="booking-form">
+
+          <form id="contactForm">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="5" required></textarea>
+            </div>
+
+            <button class="btn btn-dark w-100">Send Message</button>
+          </form>
+
+          <div class="alert alert-info mt-4 hidden" id="contactMessage">
+            Your message has been sent successfully!
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Travel Explorer | Designed with HTML, CSS, JavaScript & Bootstrap</p>
+
+    <div class="mt-2">
+      <i class="bi bi-facebook mx-2"></i>
+      <i class="bi bi-instagram mx-2"></i>
+      <i class="bi bi-twitter-x mx-2"></i>
+      <i class="bi bi-youtube mx-2"></i>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
